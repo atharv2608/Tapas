@@ -11,23 +11,24 @@ li{
     list-style: none;
     
 }
-header{
-    background-color: #2C3236;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
+
 .logo{
     height: 90px;
     width: 90px;
 }
 
 .navbar{
+    background-color: #2C3236;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    transition: 0.5s;
+    z-index: 1000;
 }
 
 .nav-menu{
@@ -60,6 +61,10 @@ header{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
+}
+
+nav.hide{
+	transform: translateY(-100%);
 }
 
 @media (max-width:850px){
